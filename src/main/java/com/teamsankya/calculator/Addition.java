@@ -25,6 +25,7 @@ public class Addition {
 		} catch (IOException e) {
 			
 			e.printStackTrace();
+			logger.info("static block is ENDED");
 		}
 	}
 	public static int add(int a,int b)
