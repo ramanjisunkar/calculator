@@ -13,7 +13,7 @@ public class Addition {
 	final static Logger logger= Logger.getLogger(Addition.class);
 	static
 	{
-		
+		logger.info("static block is started");
 		Layout lo=new SimpleLayout();
 		ConsoleAppender conapp=new ConsoleAppender(lo);
 			logger.addAppender(conapp);
