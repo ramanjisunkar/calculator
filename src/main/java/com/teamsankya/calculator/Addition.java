@@ -21,6 +21,7 @@ public class Addition {
 		try {
 			FileAppender capp =new FileAppender(lo, "my.txt", true);
 			logger.addAppender(capp);
+			logger.info("inside try catch block");
 		} catch (IOException e) {
 			
 			e.printStackTrace();
@@ -35,6 +36,7 @@ public class Addition {
 	{
 		logger.info("inside add 2 double method");
 		return a+b;
+		
 	}
 
 }
